@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<body>
+    <h1>HOME PAGE</h1>
+    {% for x in content %}
+        <p>Hello {{x}}</p>
+        {% if x == "b" %}
+            <p>B IS HERE!</p>
+        {% elif x == "c" %}
+            <p>C is here!</p>
+        {% else %}
+            <p>A is here!</p>
+        {% endif %}
+    {% endfor %}
+
+</body>
+</html>
